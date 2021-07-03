@@ -35,7 +35,7 @@
     </thead>
     <tbody>
       <?php
-       
+        if(!empty($data)){       
         foreach ($data as $row )
          {
       ?>
@@ -47,6 +47,10 @@
         <td><a class="btn btn-danger" href="index.php?action=delete&id=<?php echo $row['id']?>">Delete</a></td>
       </tr>
       <?php
+        }
+        }
+        else{
+          echo "<h2>No Data Found</h2>";
         }
       ?>
     </tbody>
