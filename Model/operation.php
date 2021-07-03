@@ -13,7 +13,7 @@ class operation extends db
 				$data[]=$row;
 			}
 			return $data;
-			//jetlo data database mathi aave tene ek array ma index page ma mokle
+			
 		}
 	}
 
